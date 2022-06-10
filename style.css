@@ -1,0 +1,47 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	user-select: none;
+}
+
+.gameboard {
+	width: 300px;
+	height: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+	outline: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	position: relative;
+	cursor: pointer;
+}
+
+.cell::before {
+	color: grey;
+	font-size: .6em;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	z-index: 100;
+	display: block;
+}
+
+.cell:nth-child(1)::before { content: '1'; }
+.cell:nth-child(2)::before { content: '2'; }
+.cell:nth-child(3)::before { content: '3'; }
+.cell:nth-child(4)::before { content: '4'; }
+.cell:nth-child(5)::before { content: '5'; }
+.cell:nth-child(6)::before { content: '6'; }
+.cell:nth-child(7)::before { content: '7'; }
+.cell:nth-child(8)::before { content: '8'; }
+.cell:nth-child(9)::before { content: '9'; }
