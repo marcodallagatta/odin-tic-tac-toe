@@ -148,6 +148,6 @@ const ticTacToe = (() => {
 })();
 
 ticTacToe.displayController.addListeners();
-ticTacToe.gameData.createPlayer('Marco', 'X');
-ticTacToe.gameData.createPlayer('MD', 'O');
+ticTacToe.gameData.createPlayer('Player A', 'X');
+ticTacToe.gameData.createPlayer('Player B', 'O');
 ticTacToe.displayController.showturn();
